@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #f5f1e8;
+    color: #263d32;
+}
+
+/* Navigation */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    background-color: #263d32;
+    color: white;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #d6b98c;
+}
+
+/* Hero section */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(
+            rgba(38, 61, 50, 0.8),
+            rgba(38, 61, 50, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1507842217343-583bb7270b66");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #d6b98c;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #c4a575;
+}
+
+/* Search bar */
+
+.search {
+    text-align: center;
+    padding: 40px;
+}
+
+.search input {
+    padding: 12px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Books section */
+
+.section-title {
+    text-align: center;
+    margin: 20px 0 35px;
+    font-size: 30px;
+}
+
+.books {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 40px 60px;
+}
+
+.book {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.book:hover {
+    transform: translateY(-8px);
+}
+
+.book img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.book h3 {
+    margin: 15px 0 8px;
+}
+
+.book p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #263d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
